@@ -1,0 +1,50 @@
+name: panther
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  icons_flutter: ^0.0.5
+  flutter_svg: ^2.0.7
+  flutter_screenutil: ^5.9.3
+  responsive_builder: ^0.7.1
+  google_fonts: ^6.2.1
+  carousel_slider: ^5.1.1
+  visibility_detector: ^0.4.0
+  responsive_framework: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - web/assets/images/Excelsior.png
+    - web/assets/images/Rustenburg.jpg
+    - web/assets/images/Welkom.jpg
+    - assets/icons/facebook.svg
+    - assets/icons/instagram.svg
+    - assets/icons/tiktok.svg
+    - assets/icons/whatsapp.svg
+    - assets/icons/BusinessN.svg
+    - assets/icons/
+    - assets/icons/ribbon.svg
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter.ttf
