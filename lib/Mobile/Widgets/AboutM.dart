@@ -44,7 +44,10 @@ class _AboutMState extends State<AboutM> {
                       'assets/icons/ribbon.svg',
                       height: 50,
                       width: 50,
-                      color: Colors.white,
+                      colorFilter: const ColorFilter.mode(
+                        Colors.white,
+                        BlendMode.srcIn,
+                      ),
                     ),
                     Text(
                       '10\n YEARS OF\n EXPERIENCE',

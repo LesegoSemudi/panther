@@ -46,7 +46,10 @@ class _About2State extends State<About2> {
                       'assets/icons/ribbon.svg',
                       height: 100,
                       width: 100,
-                      color: Colors.white,
+                      colorFilter: const ColorFilter.mode(
+                        Colors.white,
+                        BlendMode.srcIn,
+                      ),
                     ),
                     Text(
                       '10\n YEARS OF\n EXPERIENCE',

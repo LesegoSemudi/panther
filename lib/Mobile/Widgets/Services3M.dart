@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// ignore: deprecated_member_use
-import 'dart:html' as html;
 
 class Services3M extends StatefulWidget {
   const Services3M({super.key});
@@ -77,10 +75,13 @@ class _Services3MState extends State<Services3M> {
                       ),
                       child: TextButton(
                         onPressed: () {
-                          final url = 'assets/images/Exelsior.png';
-                          html.AnchorElement(href: url)
-                            ..setAttribute('download', 'Exelsior.png')
-                            ..click();
+                          // TODO: Implement cross-platform file download
+                          // For now, show a snackbar indicating the feature is being developed
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Download feature coming soon!'),
+                            ),
+                          );
                         },
                         child: Text(
                           'Download Brochure',

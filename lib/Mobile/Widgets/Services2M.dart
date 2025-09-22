@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// ignore: deprecated_member_use
-import 'dart:html' as html;
 
 class Services2M extends StatefulWidget {
   const Services2M({super.key});
@@ -79,10 +77,13 @@ class _Services2MState extends State<Services2M> {
                       ),
                       child: TextButton(
                         onPressed: () {
-                          final url = 'assets/images/Rustenburg.webp';
-                          html.AnchorElement(href: url)
-                            ..setAttribute('download', 'Rustenburg.webp')
-                            ..click();
+                          // TODO: Implement cross-platform file download
+                          // For now, show a snackbar indicating the feature is being developed
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Download feature coming soon!'),
+                            ),
+                          );
                         },
                         child: Text(
                           'Download Brochure',

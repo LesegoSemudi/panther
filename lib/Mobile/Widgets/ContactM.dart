@@ -39,6 +39,8 @@ class _ContactMState extends State<ContactM> {
         }),
       );
 
+      if (!mounted) return;
+
       if (response.statusCode == 200) {
         final result = json.decode(response.body);
         if (result['status'] == 'success') {
@@ -57,6 +59,7 @@ class _ContactMState extends State<ContactM> {
         );
       }
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('❌ Failed to send: $e')));

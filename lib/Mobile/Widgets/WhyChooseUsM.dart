@@ -45,7 +45,10 @@ class WhyChooseUsM extends StatelessWidget {
                         'assets/icons/BusinessN.svg',
                         height: 40,
                         width: 40,
-                        color: Colors.white,
+                        colorFilter: const ColorFilter.mode(
+                          Colors.white,
+                          BlendMode.srcIn,
+                        ),
                       ),
                       const SizedBox(width: 10),
                       Text(

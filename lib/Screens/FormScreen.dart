@@ -12,6 +12,7 @@ class _FormScreenState extends State<FormScreen> {
 
   String groupType = '1+9';
   String planType = 'Family';
+  String paymentMethod = 'Cash';
   bool burial = false, grocery = false, meat = false;
 
   @override
@@ -95,11 +96,12 @@ class _FormScreenState extends State<FormScreen> {
               Row(
                 children: ['Cash', 'Stop Order'].map((method) {
                   return Expanded(
-                    child: RadioListTile(
+                    child: RadioListTile<String>(
                       title: Text(method),
                       value: method,
-                      groupValue: 'Cash',
-                      onChanged: (_) {},
+                      groupValue: paymentMethod,
+                      onChanged: (value) =>
+                          setState(() => paymentMethod = value!),
                     ),
                   );
                 }).toList(),
